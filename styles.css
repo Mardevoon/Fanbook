@@ -3,10 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    --color-laranja: #FFAE81; 
+    --color-cinza: 
 }
 
 html{
     height: 500vh;
+    background-color: black;
 }
 
 .container{
@@ -26,6 +29,16 @@ header{
     position: fixed;
     top: 0;
     left: 0;
+    transition: .5s;
+}
+
+header.rolagem{
+    background-color: white;
+    padding: 20px 4%;
+}
+
+header.rolagem a{
+    color: var(--color-laranja);
 }
 
 header ul{
@@ -67,5 +80,5 @@ input[type="text"] {
 }
 
 .banner h1 span{
-    color: #FFAE81;
+    color: var(--color-laranja);
 }
